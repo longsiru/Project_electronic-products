@@ -1,0 +1,227 @@
+/*------------------------------------------------------
+/ 1. Home 01
+/------------------------------------------------------*/
+/*----   Header Css ------*/
+.header-01 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  padding: 0 87px;
+}
+.logo {
+  position: relative;
+  padding: 60px 0 20px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.logo img {
+  width: auto;
+  height: 40px;
+}
+.mainmenu {
+  position: relative;
+}
+.mainmenu ul {
+  margin: 0;
+  padding: 65px 0 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.mainmenu ul li {
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  margin: 0 45px 0 0;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.mainmenu ul li:last-child {
+  margin-right: 0;
+}
+.mainmenu ul li a {
+  display: block;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 29px;
+}
+.mainmenu ul li:hover > a {
+  color: #3160d8;
+}
+.mainmenu ul ul.sub-menu {
+  background: #fff;
+  width: 220px;
+  z-index: 9;
+  text-align: left;
+  padding: 0;
+  display: block;
+  left: -30px;
+  margin: auto;
+  position: absolute;
+  padding: 0 0;
+  visibility: hidden;
+  opacity: 0;
+  top: 100%;
+  -o-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%;
+  transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform: rotateX(-75deg);
+  -o-transform: rotateX(-75deg);
+  -moz-transform: rotateX(-75deg);
+  -webkit-transform: rotateX(-75deg);
+  z-index: 9;
+  box-shadow: 0 14px 20px 0 rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 14px 20px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 14px 20px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.mainmenu ul ul.sub-menu li {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+}
+.mainmenu ul ul.sub-menu li a {
+  padding: 9px 20px;
+  margin: 0;
+  letter-spacing: 0;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.mainmenu ul ul li a:hover {
+  padding-left: 30px;
+}
+.mainmenu ul li:hover ul.sub-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+}
+.header-cogs {
+  padding: 70px 0 0;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header-cogs a {
+  margin-left: 35px;
+  line-height: 0.8;
+  color: #000;
+}
+.header-cogs a:first-child {
+  margin-left: 0;
+}
+.header-cogs a.search {
+}
+.carts {
+  font-size: 22px;
+  color: #000;
+  position: relative;
+}
+.carts span {
+  width: 18px;
+  height: 18px;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  line-height: 0.8;
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  padding: 4px 0;
+  position: absolute;
+  right: -11px;
+  bottom: -8px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.carts img {
+  height: 22px;
+  width: auto;
+  display: inline-block;
+}
+.carts:hover span {
+  background: #3160d8;
+  color: #fff;
+}
+.select-currency,
+.select-country,
+.user-login {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  font-weight: 700;
+}
+.select-currency i,
+.user-login i {
+  font-size: 16px;
+  padding-right: 10px;
+  position: relative;
+  top: 2px;
+}
+.select-country img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  position: relative;
+  top: -1px;
+}
+.header-cogs .user-login {
+  margin-left: 15px;
+}
+.header-cogs .select-currency {
+  margin-left: 22px;
+}
+.header-cogs .select-country {
+  margin-left: 30px;
+  margin-top: 1px;
+}
+.search {
+  font-size: 18px;
+}
+.header-cogs a:hover {
+  color: #3160d8;
+}
+.mobile-btn {
+  display: none;
+}
+header.sticky {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background: #fff;
+  -webkit-box-shadow: 0px 7px 40px 0px rgba(150, 176, 203, 0.2);
+  -moz-box-shadow: 0px 7px 40px 0px rgba(150, 176, 203, 0.2);
+  box-shadow: 0px 7px 40px 0px rgba(150, 176, 203, 0.2);
+}
+header.sticky .logo {
+  padding-top: 20px;
+}
+header.sticky .mainmenu > ul {
+  padding-top: 25px;
+}
+header.sticky .header-cogs {
+  padding-top: 30px;
+}
